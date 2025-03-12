@@ -1,0 +1,25 @@
+name: deploy-gh-pages
+on:
+  workflow_dispatch: {} # allow manually triggering the workflow
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - mkdocs.yml
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    permissions:
+      contents: write  # for mkdocs gh-deploy to publish docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: pip install mkdocs-material mkdocs-awesome-pages-plugin
+      - run: mkdocs gh-deploy --force
