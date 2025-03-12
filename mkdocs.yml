@@ -18,6 +18,7 @@ theme:
   - navigation.tabs
   - navigation.tabs.sticky
   - content.code.copy
+  - search.share
   icon:
     admonition:
       note: octicons/tag-16
@@ -59,9 +60,11 @@ copyright: Copyright 2025-Present Datadog, Inc.
 nav:
   - Home: index.md
   - Extract cloud credentials from applications: 
+    - ./extract/index.md
     - Credentials delivery mechanisms: extract/types-of-credentials-delivery.md
     - ... | extract/**/*.md
   - Use cloud credentials:
     - AWS access keys: use/aws.md
     - Google Cloud tokens: use/gcp.md
     - Azure tokens: use/azure.md
+  - 📢 Give feedback: https://docs.google.com/forms/d/e/1FAIpQLSfERimYWwwy5wlcjm4dqC31UsgunVGgpG_A-12o4g6tXiuCMQ/viewform?usp=header

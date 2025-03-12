@@ -6,7 +6,7 @@
 | ----------- | ------------------------------------ |
 | Credentials delivery mechanism       | [Served through link-local metadata service](../types-of-credentials-delivery.md#served-through-link-local-metadata-service)  |
 | Protection type       | Header requires hardcoded value |
-| Exploitation primitives    | `Query arbitrary URL with arbitrary HTTP headers` |
+| Exploitation primitives    | `Query arbitrary URL with arbitrary HTTP header` |
 
 ## Extracting credentials
 
