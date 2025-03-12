@@ -1,0 +1,1 @@
+# Extract cloud credentials
