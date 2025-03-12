@@ -1,25 +1,16 @@
-site_name: Cloud Niffler
-site_url: https://niffler.cloud
-repo_url: https://github.com/DataDog/cloud-niffler
-repo_name: datadog/cloud-niffler
+site_name: Cloud Credentials Field Manual
+site_url: https://datadog.github.io/cloud-credentials-field-manual
+repo_url: https://github.com/DataDog/cloud-credentials-field-manual
+repo_name: datadog/cloud-credentials-field-manual
 plugins:
   - search
   - awesome-pages
 theme:
   name: material
   logo: ./logo.png
-  favicon: ./logo.png
-  # palette:
-  #   - scheme: default
-  #     primary: deep-purple
-  #     toggle:
-  #       icon: material/toggle-switch-off-outline
-  #       name: Switch to dark mode
-  #   - scheme: slate
-  #     primary: deep-purple
-  #     toggle:
-  #       icon: material/toggle-switch
-  #       name: Switch to light mode
+  favicon: ./logo-square.png
+  palette:
+    primary: dark-blue
   features:
   - navigation.expand
   - navigation.indexes
@@ -62,48 +53,15 @@ markdown_extensions:
   - footnotes
   - pymdownx.tabbed:
       alternate_style: true 
-
-
-# extra_javascript:
-#   - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-#   - javascripts/tablesort.js
-#   - javascripts/ga.js
-#   - https://www.googletagmanager.com/gtag/js?id=G-8QPPPHCKMM
 extra_css:
   - css/extra.css
 copyright: Copyright 2025-Present Datadog, Inc.
 nav:
   - Home: index.md
-  - Extract cloud credentials: 
-    - Credentials delivery mechanisms: extract/types.md
+  - Extract cloud credentials from applications: 
+    - Credentials delivery mechanisms: extract/types-of-credentials-delivery.md
     - ... | extract/**/*.md
   - Use cloud credentials:
-    - Use AWS credentials: use/aws.md
-    - Use a Google Cloud access token: use/gcp.md
-    - Use an Azure access token: use/azure.md
-
-
-    
-  #     - Frequently Asked Questions: faq.md
-  #     - Stratus Red Team vs. Other Tools: comparison.md
-  #     - Contributing: contributing.md
-  # - User Guide:
-  #     - Getting Started: user-guide/getting-started.md
-  #     - Examples: user-guide/examples.md
-  #     - Usage: user-guide/usage.md
-  #     - Command Reference:
-  #         - CLI Autocompletion: user-guide/commands/autocompletion.md
-  #         - list: user-guide/commands/list.md
-  #         - status: user-guide/commands/status.md
-  #         - show: user-guide/commands/show.md
-  #         - warmup: user-guide/commands/warmup.md
-  #         - detonate: user-guide/commands/detonate.md
-  #         - revert: user-guide/commands/revert.md
-  #         - cleanup: user-guide/commands/cleanup.md
-  #     - Troubleshooting: user-guide/troubleshooting.md
-  #     - Programmatic Usage: user-guide/programmatic-usage.md
-  # - Attack Techniques Reference:
-  #     - All Attack Techniques: attack-techniques/list.md
-  #     - Philosophy: attack-techniques/philosophy.md
-  #     - Supported Platforms: attack-techniques/supported-platforms.md
-  #     - ... | attack-techniques/*/*.md
+    - AWS access keys: use/aws.md
+    - Google Cloud tokens: use/gcp.md
+    - Azure tokens: use/azure.md

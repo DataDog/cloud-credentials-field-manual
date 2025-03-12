@@ -5,9 +5,9 @@ Amazon EC2 is one of the most popular services. It allows you to run vitrtual ma
 
 | Property      | Value                          |
 | ----------- | ------------------------------------ |
-| Credentials delivery mechanism       | [Served through link-local metadata service](../types.md#served-through-link-local-metadata-service)  |
+| Credentials delivery mechanism       | [Served through link-local metadata service](../types-of-credentials-delivery.md#served-through-link-local-metadata-service)  |
 | Protection type       | None (IMDSv1), or HTTP header requires a stateful session token (IMDSv2) |
-| Exploitation primitives    | `Query arbitrary URL` (IMDSv1), `Query arbitrary URL` and `Perform HTTP requests with arbitrary method, URL and body` |
+| Exploitation primitives    | `Query arbitrary URL` (IMDSv1), `Query arbitrary URL` and `Perform HTTP requests with arbitrary method, URL and body` (IMDSv2) |
 
 ## Extracting credentials
 
@@ -20,7 +20,7 @@ curl http://169.254.169.254/latest/meta-data/iam/security-credentials
 This will return the name of the role attached to the EC2 instance, that you can use in a subsequent HTTP request to retrieve temporary credentials for the role:
 
 ```bash
-curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/iam/security-credentials/MyInstanceRole
+curl http://169.254.169.254/latest/meta-data/iam/security-credentials/MyInstanceRole
 ```
 
 ### If IMDSv2 is enforced

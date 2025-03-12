@@ -4,7 +4,7 @@ AWS App Runner is an AWS service that allows you to easily run containers withou
 
 | Property      | Value                          |
 | ----------- | ------------------------------------ |
-| Credentials delivery mechanism       | [Served through link-local metadata service](../types.md#served-through-link-local-metadata-service)  |
+| Credentials delivery mechanism       | [Served through link-local metadata service](../types-of-credentials-delivery.md#served-through-link-local-metadata-service)  |
 | Protection type       | URL path requires value from environment |
 | Exploitation primitives    | `Query arbitrary URL` and `Read environment variables` |
 

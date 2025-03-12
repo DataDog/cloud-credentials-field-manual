@@ -4,7 +4,7 @@ AWS Lambda is a serverless service that can run containers and traditional appli
 
 | Property      | Value                          |
 | ----------- | ------------------------------------ |
-| Credentials delivery mechanism       | [Injected at runtime through environment variables](../types.md#injected-at-runtime-through-environment-variables)  |
+| Credentials delivery mechanism       | [Injected at runtime through environment variables](../types-of-credentials-delivery.md#injected-at-runtime-through-environment-variables)  |
 | Protection type       | N/A |
 | Exploitation primitives    | `Read environment variables` |
 
